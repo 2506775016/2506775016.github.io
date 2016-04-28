@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+    figure{
+      width:500px;
+      height:500px;
+      border:10px solid golden;
+      box-shadow:0px 0px 10px 3px yellow;
+      overflow:hidden;
+      position:relative;
+    }
+    figure img{
+      width:600px;
+      margin:-60px;
+      transform:rotate(-20deg);
+      transition:all 1s;
+    }
+    figure:hover img{
+      transform:rotate(20deg);
+      cursor:pointer;
+    }
+    figure figcaption{
+      position:absolute;
+      z-index:3;
+      left:0;
+      bottom:0;
+      width:100%;
+      height:30px;
+      color:blue;
+      font-weight: bold;
+      background-color:gray;
+      text-align:center;
+      line-height:25px;
+      transition:color 1s,background-color .5s;
+    }
+    figure:hover figcaption{
+      color:transparent;
+      background-color:transparent;
+    }
+</style>
+<body>
+  <figure>
+    <figcaption>伟大的爱！！！！！</figcaption>
+    <img src="http://g.hiphotos.baidu.com/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=fb09b812d439b60059c307e588395e4f/8c1001e93901213f56c9f52d55e736d12e2e954d.jpg" alt="">
+  </figure>
+</body>
+</html>
